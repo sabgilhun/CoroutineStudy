@@ -14,5 +14,10 @@ fun main() = runBlocking {
         throw IOException()
     }
 
-    job.join()
+    val job2 = GlobalScope.launch {
+        delay(100)
+        throw IOException()
+    }
+
+    job2.join()
 }

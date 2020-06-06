@@ -99,7 +99,7 @@ CoroutineScope.newCoroutineContext(context: CoroutineContext): CoroutineContext 
 
 코루틴을 실행할때 만든 람다 블럭은 바로 실행되는 것이 아니라 작업 큐에 들어가게 된다. 이때 들어간 코루틴을 핸들링 할때 사용하는 것이 `Job`이다. 예를들어 Job과 Join을 이용하여 다른 Job과의 종속성을 설정할 수 있고 다른 Job들과 계층 구조를 만들어서 child job이 끝나기 전까지 parent job은 complete 되지 않도록 설정할 수 있다.
 
-![](/Users/gim-yonghun/workspace/git/coroutines/docs/image/chapter3-1.png)
+![](./image/chapter3-1.png)
 
 위의 다이어 그램은 Job 의 상태를 표현한 것이다.
 
